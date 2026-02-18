@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComputEra | AI Supercomputers for Every Desk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+                    },
+                    colors: {
+                        dark: '#0a0a0a',
+                        light: '#fafafa',
+                        accent: '#0071e3',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .product-card:hover .product-image {
+            transform: scale(1.03);
+        }
+        .product-image {
+            transition: transform 0.4s ease;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #0071e3, #00c7be);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-light text-dark font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-xl z-50 border-b border-gray-200/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex items-center justify-between h-12">
+                <a href="#" class="font-semibold text-lg tracking-tight">ComputEra</a>
+                <div class="flex items-center gap-8 text-sm text-gray-600">
+                    <a href="#products" class="hover:text-dark transition">Products</a>
+                    <a href="#about" class="hover:text-dark transition">About</a>
+                    <a href="#contact" class="hover:text-dark transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-32 pb-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-semibold tracking-tight mb-4">
+                AI Supercomputers.<br>
+                <span class="gradient-text">For your desk.</span>
+            </h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+                Desktop AI workstations powered by NVIDIA Grace Blackwell. 1 petaFLOP of AI performance. 200B parameter models. No cloud required.
+            </p>
+            <a href="#products" class="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-blue-600 transition">
+                View Products
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="py-20 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-semibold mb-4">Our Products</h2>
+                <p class="text-gray-600">Choose the AI workstation that fits your workflow</p>
+            </div>
+
+            <!-- Product 1: NVIDIA DGX Spark -->
+            <div class="product-card mb-24">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="bg-gray-100 rounded-3xl p-8 flex items-center justify-center aspect-square">
+                        <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/gtcf24/dgx-spark/nvidia-dgx-spark-desktop-2c50-d@2x.png" alt="NVIDIA DGX Spark" class="product-image max-h-80 object-contain">
+                    </div>
+                    <div>
+                        <span class="text-xs font-medium text-accent uppercase tracking-wide">Reference Design</span>
+                        <h3 class="text-3xl font-semibold mt-2 mb-4">NVIDIA DGX Spark</h3>
+                        <p class="text-gray-600 mb-6">
+                            The original personal AI supercomputer from NVIDIA. Powered by the GB10 Grace Blackwell Superchip with 128GB unified memory and the complete NVIDIA AI software stack.
+                        </p>
+                        <ul class="space-y-2 text-sm text-gray-600 mb-6">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                1 petaFLOP FP4 AI Performance
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                128GB Unified LPDDR5X Memory
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                Run 200B Parameter Models
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                NVIDIA DGX OS Pre-installed
+                            </li>
+                        </ul>
+                        <span class="text-2xl font-semibold">Contact for Pricing</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2: Gigabyte AI TOP ATOM -->
+            <div class="product-card mb-24">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="md:order-2 bg-gray-100 rounded-3xl p-8 flex items-center justify-center aspect-square">
+                        <img src="https://www.gigabyte.com/fileupload/product/2/true/ATAGB10-9000/19009_231024_bg10_render_1.png" alt="Gigabyte AI TOP ATOM" class="product-image max-h-80 object-contain">
+                    </div>
+                    <div class="md:order-1">
+                        <span class="text-xs font-medium text-orange-500 uppercase tracking-wide">Best Value</span>
+                        <h3 class="text-3xl font-semibold mt-2 mb-4">Gigabyte AI TOP ATOM</h3>
+                        <p class="text-sm text-gray-500 mb-2">Model: ATAGB10-9000</p>
+                        <p class="text-gray-600 mb-6">
+                            Gigabyte's take on the DGX Spark platform. Compact, powerful, and ready for AI development. Features 4TB PCIe 5.0 NVMe storage for large model datasets.
+                        </p>
+                        <ul class="space-y-2 text-sm text-gray-600 mb-6">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                GB10 Grace Blackwell Superchip
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                4TB PCIe 5.0 NVMe SSD
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                10GbE ConnectX-7 Networking
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                Compact Desktop Design
+                            </li>
+                        </ul>
+                        <span class="text-2xl font-semibold">Contact for Pricing</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3: MSI EdgeXpert MS-C931 -->
+            <div class="product-card mb-24">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="bg-gray-100 rounded-3xl p-8 flex items-center justify-center aspect-square">
+                        <img src="https://ipc.msi.com/static/upload/product/2/c7c10d5f1f9ad1ab3a8e6d6a1f2f1e17.png" alt="MSI EdgeXpert MS-C931" class="product-image max-h-80 object-contain">
+                    </div>
+                    <div>
+                        <span class="text-xs font-medium text-red-500 uppercase tracking-wide">Enterprise Ready</span>
+                        <h3 class="text-3xl font-semibold mt-2 mb-4">MSI EdgeXpert MS-C931</h3>
+                        <p class="text-sm text-gray-500 mb-2">Model: MS-C931</p>
+                        <p class="text-gray-600 mb-6">
+                            MSI's industrial-grade AI supercomputer. Designed for healthcare, finance, and education sectors requiring reliable on-premise AI computing.
+                        </p>
+                        <ul class="space-y-2 text-sm text-gray-600 mb-6">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                1.0K TOPS AI Performance
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                128GB LPDDR5x-9400 Memory
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                Pre-installed AI Software Stack
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                Industrial Build Quality
+                            </li>
+                        </ul>
+                        <span class="text-2xl font-semibold">Contact for Pricing</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4: ASUS Ascent GX10 -->
+            <div class="product-card mb-24">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="md:order-2 bg-gray-100 rounded-3xl p-8 flex items-center justify-center aspect-square">
+                        <img src="https://www.asus.com/media/global/products/P9kWRqL5hI1nL8ZP/P_setting_xxx_0_0_0.png" alt="ASUS Ascent GX10" class="product-image max-h-80 object-contain">
+                    </div>
+                    <div class="md:order-1">
+                        <span class="text-xs font-medium text-purple-500 uppercase tracking-wide">Developer Favorite</span>
+                        <h3 class="text-3xl font-semibold mt-2 mb-4">ASUS Ascent GX10</h3>
+                        <p class="text-sm text-gray-500 mb-2">Model: GX10-GG0011BN</p>
+                        <p class="text-gray-600 mb-6">
+                            ASUS brings its legendary build quality to AI workstations. Stellar Gray finish, extensive connectivity including WiFi 7, and TAA compliance for government use.
+                        </p>
+                        <ul class="space-y-2 text-sm text-gray-600 mb-6">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                1TB NVMe PCIe Gen 4 SSD
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                WiFi 7 + Bluetooth 5.3
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                4x USB 3.2 Type-C Ports
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                TAA Compliant
+                            </li>
+                        </ul>
+                        <span class="text-2xl font-semibold">Contact for Pricing</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5: Dell DGX Spark -->
+            <div class="product-card mb-12">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="bg-gray-100 rounded-3xl p-8 flex items-center justify-center aspect-square">
+                        <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/desktops-and-all-in-ones/optiplex-desktops/optiplex-7010-desktop/global-sr-1334/optiplex-7010-sff-global-serp-gcc-campaign-800x620-3rev.psd?fmt=png-alpha&wid=800&hei=620" alt="Dell DGX Spark" class="product-image max-h-80 object-contain">
+                    </div>
+                    <div>
+                        <span class="text-xs font-medium text-blue-600 uppercase tracking-wide">Enterprise Support</span>
+                        <h3 class="text-3xl font-semibold mt-2 mb-4">Dell DGX Spark</h3>
+                        <p class="text-sm text-gray-500 mb-2">Model: 126X6000000</p>
+                        <p class="text-gray-600 mb-6">
+                            Dell's enterprise-grade DGX Spark with legendary ProSupport. Addresses key pain points with enhanced cooling and expanded connectivity options.
+                        </p>
+                        <ul class="space-y-2 text-sm text-gray-600 mb-6">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                Enhanced Thermal Design
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                Dell ProSupport Included
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                Enterprise Deployment Tools
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                Global Service Network
+                            </li>
+                        </ul>
+                        <span class="text-2xl font-semibold">Contact for Pricing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-20 px-6 bg-dark text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6">Why ComputEra?</h2>
+            <p class="text-gray-400 text-lg mb-12">
+                We bring the world's most powerful desktop AI supercomputers to your business. No cloud latency. No data leaving your premise. Just pure, local AI power.
+            </p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="text-4xl font-bold text-accent mb-2">1 PF</div>
+                    <div class="text-gray-500">AI Performance</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-accent mb-2">200B</div>
+                    <div class="text-gray-500">Parameter Models</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-accent mb-2">100%</div>
+                    <div class="text-gray-500">Local Processing</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 px-6">
+        <div class="max-w-xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6">Get in Touch</h2>
+            <p class="text-gray-600 mb-8">Ready to bring AI supercomputing to your desk? Contact us for pricing and availability.</p>
+            <form class="space-y-4 text-left">
+                <div>
+                    <label class="block text-sm font-medium mb-1">Name</label>
+                    <input type="text" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition" placeholder="Your name">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-1">Email</label>
+                    <input type="email" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition" placeholder="your@email.com">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-1">Interested In</label>
+                    <select class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition bg-white">
+                        <option>NVIDIA DGX Spark</option>
+                        <option>Gigabyte AI TOP ATOM</option>
+                        <option>MSI EdgeXpert MS-C931</option>
+                        <option>ASUS Ascent GX10</option>
+                        <option>Dell DGX Spark</option>
+                        <option>Multiple Units / Enterprise</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-1">Message</label>
+                    <textarea rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition resize-none" placeholder="Tell us about your AI workload..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-accent text-white py-3 rounded-full font-medium hover:bg-blue-600 transition">
+                    Send Inquiry
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="font-semibold">ComputEra</div>
+                <div class="text-sm text-gray-500">
+                    Desktop AI Supercomputers for Every Business
+                </div>
+            </div>
+            <div class="text-center text-xs text-gray-400 mt-8">
+                &copy; 2026 ComputEra. All product names and logos are property of their respective owners.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
